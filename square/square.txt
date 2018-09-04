@@ -1,0 +1,6 @@
+import numpy as np
+squares = map(lambda x: x**2, range(1,151))
+special_squares = list(filter(lambda x: x >100 and x%2==0, squares))
+Arr=np.array(special_squares)
+print(Arr.sum())
+print(special_squares)
